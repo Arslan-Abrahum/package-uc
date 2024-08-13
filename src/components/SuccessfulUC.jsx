@@ -306,7 +306,7 @@ function SuccessfulUC() {
                         </div>
                         <div className="cards flex items-center justify-between bg-[#141B3D] rounded-md pe-5">
                           <div className='flex items-center '>
-                            <div className="card-image w-16 h-10 mr-4">
+                            <div className="card-image w-16 h-10 mr-4 pl-2">
                               <img src={USA_Logo} alt="visaGolden" className="w-full h-full object-contain" />
                             </div>
                             <div className="card-data">
