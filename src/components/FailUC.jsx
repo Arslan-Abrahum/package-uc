@@ -17,7 +17,7 @@ import UCImage1 from "../assets/pubg-images/uc-small.bc30c95b.png"
 import CrossImage from "../assets/pubg-images/X-8.png"
 import UCImage from "../assets/pubg-images/uc-small.bc30c95b.png"
 import Globe from "../assets/pubg-images/globe-image.png"
-import Verified from "../assets/pubg-images/WhatsApp_Image_2024-08-10_at_09.32.35_cd8914d3-removebg-preview.png"
+import USA_Logo from '../assets/pubg-images/Flag_of_the_United_States.png'
 
 const initialPackages = [
   { id: 1001, package_name: "60 + 30 UC", playerIdd: 1846249952, card_amount: 852282, card_type: "Master", price_usd: 0.99, uc_amount: 10, bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1 },
@@ -168,8 +168,8 @@ function FailedUC() {
 
       <div className="h-[auto] w-[1000px] setting-main flex items-center flex-col justify-center bg-[#171F45] mx-auto my-5">
         <div className="h-[auto] w-[1000px] setting-main mx-auto p-4">
-          <h1 class="text-xl mt-2 text-white flex">Dark Web to Verified <img className='h-[35px] w-[55px]' src={Verified} alt="Image Verify" /></h1>
-
+        <h1 class="text-xl mt-2 text-white flex bg-[#141B3D]"> <img className='h-[30px] w-[50px]' src={USA_Logo} alt="Image Verify" />  <span className='ml-3'>(USA:5317) Connected: Balance $725821.21</span>
+        </h1>
         </div>
         <h1 class="text-3xl font-bold text-center text-red-500 mb-1 text-shadow">Dark Server Carding UC</h1>
         <h1 className="text-2xl font-semibold text-center mb-2 text-white">Midasbuy Connected Successfully</h1>
@@ -259,6 +259,7 @@ function FailedUC() {
                       </div>
                       <h2 className="text-lg text-white mb-5">Select Carding Payment Channels</h2>
                       <div className="space-y-4">
+                        {/* start */}
                         <div className="cards flex items-center justify-between bg-[#141B3D] rounded-md pe-5">
                           <div className='flex items-center'>
 
@@ -266,11 +267,13 @@ function FailedUC() {
                               <img src={VisaCard} alt="visa" className="w-full h-full object-contain" />
                             </div>
                             <div className="card-data">
-                              <h2 className="text-white">(Visa:8362) Connected: Balance $852.28</h2>
+                              <h2 className="text-white">(Visa:9628) Connected: Balance $9061.21
+                              </h2>
                             </div>
                           </div>
                           <input type="checkbox" name='a' className='h-5 w-5 cursor-pointer' />
                         </div>
+
                         <div className="cards flex items-center justify-between bg-[#141B3D] rounded-md pe-5">
                           <div className='flex items-center'>
 
@@ -278,7 +281,7 @@ function FailedUC() {
                               <img src={MasterCard} alt="masterCard" className="w-full h-full object-contain rounded-md" />
                             </div>
                             <div className="card-data">
-                              <h2 className="text-white">(Master:7891 ) Connected: Balance $35000</h2>
+                              <h2 className="text-white">(Master:1262) Connected: Balance $28000.89</h2>
                             </div>
                           </div>
                           <input type="checkbox" name='a' className='h-5 w-5 cursor-pointer' />
@@ -289,12 +292,24 @@ function FailedUC() {
                               <img src={VisaGolden} alt="visaGolden" className="w-full h-full object-contain" />
                             </div>
                             <div className="card-data">
-                              <h2 className="text-white">(Golden:0025 ) Connected: Balance $15000</h2>
+                              <h2 className="text-white">(Golden:0089) Connected: Balance $85000.12</h2>
                             </div>
                           </div>
                           <input type="checkbox" name='a' className='h-5 w-5 cursor-pointer' />
                         </div>
-
+                        <div className="cards flex items-center justify-between bg-[#141B3D] rounded-md pe-5">
+                          <div className='flex items-center '>
+                            <div className="card-image w-16 h-10 mr-4">
+                              <img src={USA_Logo} alt="visaGolden" className="w-full h-full object-contain" />
+                            </div>
+                            <div className="card-data">
+                              <h2 className="text-white"> (USA:5317) Connected: Balance $725821.21
+                              </h2>
+                            </div>
+                          </div>
+                          <input type="checkbox" name='a' className='h-5 w-5 cursor-pointer' />
+                        </div>
+                        {/* end */}
                       </div>
                     </div>
                     <div className="payment-submit-part bg-[#141B3D] p-6 rounded-lg shadow-md">
