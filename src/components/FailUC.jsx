@@ -168,7 +168,7 @@ function FailedUC() {
 
       <div className="h-[auto] w-[1000px] setting-main flex items-center flex-col justify-center bg-[#171F45] mx-auto my-5">
         <div className="h-[auto] w-[1000px] setting-main mx-auto p-4">
-        <h1 class="text-xl mt-2 text-white flex bg-[#141B3D]"> <img className='h-[30px] w-[50px]' src={USA_Logo} alt="Image Verify" />  <span className='ml-3'>(USA:5317) Connected: Balance $725821.21</span>
+        <h1 class="text-xl mt-2 text-white flex bg-[#141B3D] py-2 px-3 w-[50%]"> <img className='h-[30px] w-[50px]' src={USA_Logo} alt="Image Verify" />  <span className='ml-3'>(USA:5317) Connected: Balance $725821.21</span>
         </h1>
         </div>
         <h1 class="text-3xl font-bold text-center text-red-500 mb-1 text-shadow">Dark Server Carding UC</h1>
