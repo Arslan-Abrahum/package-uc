@@ -324,7 +324,6 @@ function FailedUC() {
                         <h2 className="price-details text-lg font-semibold text-white mb-2">Price Details:</h2>
                         <div className="prices w-full flex justify-between items-center">
                           <h2 className="current-price text-white">Current Price:</h2>
-                          {/* <h2 className="price-value text-white">${selectedPackage.price_usd} / PKR {selectedPackage.price_pkr}</h2> */}
                           <h2 className="price-value text-white">Card Connected</h2>
                         </div>
                       </div>
