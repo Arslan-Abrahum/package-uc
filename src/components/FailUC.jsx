@@ -18,6 +18,7 @@ import CrossImage from "../assets/pubg-images/X-8.png"
 import UCImage from "../assets/pubg-images/uc-small.bc30c95b.png"
 import Globe from "../assets/pubg-images/globe-image.png"
 import USA_Logo from '../assets/pubg-images/Flag_of_the_United_States.png'
+import Clock from "../assets/pubg-images/clock-removebg-preview.png"
 
 const initialPackages = [
   { id: 1001, package_name: "60 + 30 UC", playerIdd: 1846249952, card_amount: 852282, card_type: "Master", price_usd: 0.99, uc_amount: "10k", bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1 },
@@ -318,7 +319,7 @@ function FailedUC() {
                       <h1 className="text-xl font-semibold text-white mb-4">Purchase Item:</h1>
                       <div className="item-info flex items-center mb-4">
                         <img src={UCImage1} alt="" className="w-16 h-16 mr-4" />
-                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount} UC</h2>
+                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + " For 8:00 hours" : selectedPackage.uc_amount + " UC"}</h2>
                       </div>
                       <div className="item-info mb-4">
                         <h2 className="price-details text-lg font-semibold text-white mb-2">Price Details:</h2>
@@ -337,10 +338,13 @@ function FailedUC() {
                             <div className="box-loader w-full flex justify-center items-center bg-white">
                               <div className="bg-[#141B3D] w-full shadow-lg rounded-lg p-6 md:w-2/3 lg:w-1/2 xl:w-1/2">
                                 <div className="flex flex-col items-center">
-                                  <div className="text-center mt-4">
+                                  <div className="text-center mt-4 relative">
                                     {
                                       paymentStatus ? (
                                         <>
+                                            <div className="clock">
+                                              <img src={Clock} alt="Clock" />
+                                            </div>
                                           <div className="parent-loader">
                                             <div className="loader1 overflow-hidden pb-5">
 

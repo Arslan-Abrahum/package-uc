@@ -20,6 +20,7 @@ import Globe from "../assets/pubg-images/globe-image.png"
 import UCImage from "../assets/pubg-images/uc-small.bc30c95b.png"
 import TickImage from "../assets/pubg-images/tick-mark-icon.webp"
 import USA_Logo from '../assets/pubg-images/Flag_of_the_United_States.png'
+import Clock from "../assets/pubg-images/clock-removebg-preview.png"
 
 
 const initialPackages = [
@@ -325,7 +326,7 @@ function SuccessfulUC() {
                       <h1 className="text-xl font-semibold text-white mb-4">Purchase Item:</h1>
                       <div className="item-info flex items-center mb-4">
                         <img src={UCImage1} alt="" className="w-16 h-16 mr-4" />
-                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount} UC</h2>
+                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + " For 8:00 hours" : selectedPackage.uc_amount + " UC"}</h2>
                       </div>
                       <div className="item-info mb-4">
                         <h2 className="price-details text-lg font-semibold text-white mb-2">Price Details:</h2>
@@ -344,10 +345,13 @@ function SuccessfulUC() {
                             <div className="box-loader w-full flex justify-center items-center bg-white">
                               <div className="bg-[#141B3D] w-full shadow-lg rounded-lg p-6 md:w-2/3 lg:w-1/2 xl:w-1/2">
                                 <div className="flex flex-col items-center">
-                                  <div className="text-center mt-4">
+                                  <div className="text-center mt-4 rel">
                                     {
                                       paymentStatus ? (
                                         <>
+                                           <div className="clock">
+                                              <img src={Clock} alt="Clock" />
+                                            </div>
                                           <div className="parent-loader">
                                             <div className="loader1">
 

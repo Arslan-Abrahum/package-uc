@@ -210,6 +210,21 @@
   justify-content: center;
   align-content: center;
 }
+.rel {
+  position: relative;
+}
+.clock {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.clock img {
+  height: 100%;
+  width: 100%;
+  filter: invert(98%) sepia(1%) saturate(308%) hue-rotate(317deg) brightness(119%) contrast(100%);
+}
 
 .loader {
   height: auto;
