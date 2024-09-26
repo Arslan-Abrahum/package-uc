@@ -34,6 +34,7 @@ const initialPackages = [
   { id: 1011, package_name: "11000 + 4500 UC", playerIdd: 1846241355, card_amount: 852282, card_type: "Master", price_usd: 220.99, uc_amount: "400k", bonus_uc: 4500, total_uc: 15500, picURL: BG_UC_Image6 },
   { id: 1012, package_name: "12000 + 4800 UC", playerIdd: 1846249142, card_amount: 852282, card_type: "Visa", price_usd: 250.99, uc_amount: "500k", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 },
   { id: 1012, package_name: "12000 + 4800 UC", playerIdd: 1846249142, card_amount: 852282, card_type: "Visa", price_usd: 250.99, uc_amount: "30", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 },
+  { id: 1012, package_name: "12000 + 4800 UC", playerIdd: 1846249142, card_amount: 852282, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 },
   { id: 1012, package_name: "12000 + 4800 UC", playerIdd: 1846249142, card_amount: 852282, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 }
 ];
 
