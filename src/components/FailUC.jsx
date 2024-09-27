@@ -320,7 +320,7 @@ function FailedUC() {
                       <h1 className="text-xl font-semibold text-white mb-4">Purchase Item:</h1>
                       <div className="item-info flex items-center mb-4">
                         <img src={UCImage1} alt="" className="w-16 h-16 mr-4" />
-                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + `${selectedPackage.duration == "8" ? "For 8:00 hours" : "For 3 days."}` : selectedPackage.uc_amount + " UC"}</h2>
+                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + `${selectedPackage.duration == "8" ? " For 8:00 hours" : " For 3 days."}` : selectedPackage.uc_amount + " UC"}</h2>
                       </div>
                       <div className="item-info mb-4">
                         <h2 className="price-details text-lg font-semibold text-white mb-2">Price Details:</h2>
