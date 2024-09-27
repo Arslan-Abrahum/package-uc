@@ -24,21 +24,21 @@ import Clock from "../assets/pubg-images/clock-removebg-preview.png"
 
 
 const initialPackages = [
-  { id: 1, package_name: "60 + 30 UC", playerIdd: 1236249952, card_type: "Master", price_usd: 0.99, uc_amount: "10k", bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1 },
-  { id: 2, package_name: "300 + 25 UC", playerIdd: 2136249842, card_type: "Visa", price_usd: 4.99, uc_amount: "15k", bonus_uc: 25, total_uc: 325, picURL: BG_UC_Image2 },
-  { id: 3, package_name: "600 + 60 UC", playerIdd: 3216249732, card_type: "Visa Golden", price_usd: 9.99, uc_amount: "20k", bonus_uc: 60, total_uc: 660, picURL: BG_UC_Image1 },
-  { id: 4, package_name: "1500 + 300 UC", playerIdd: 1326249622, card_type: "Visa Golden", price_usd: 24.99, uc_amount: "30k", bonus_uc: 300, total_uc: 1800, picURL: BG_UC_Image3 },
-  { id: 5, package_name: "3000 + 850 UC", playerIdd: 2316249512, card_type: "Visa", price_usd: 49.99, uc_amount: "40k", bonus_uc: 850, total_uc: 3850, picURL: BG_UC_Image4 },
-  { id: 6, package_name: "6000 + 2100 UC", playerIdd: 1336249402, card_type: "Master", price_usd: 99.99, uc_amount: "60k", bonus_uc: 2100, total_uc: 8100, picURL: BG_UC_Image5 },
-  { id: 7, package_name: "7000 + 2500 UC", playerIdd: 1216249362, card_type: "Visa Golden", price_usd: 130.99, uc_amount: "100k", bonus_uc: 2500, total_uc: 9500, picURL: BG_UC_Image6 },
-  { id: 8, package_name: "8000 + 3100 UC", playerIdd: 2126249272, card_type: "Master", price_usd: 150.99, uc_amount: "160k", bonus_uc: 3100, total_uc: 11100, picURL: BG_UC_Image6 },
-  { id: 9, package_name: "9000 + 3600 UC", playerIdd: 3136249182, card_type: "Visa", price_usd: 175.99, uc_amount: "200k", bonus_uc: 3600, total_uc: 12600, picURL: BG_UC_Image6 },
-  { id: 10, package_name: "10000 + 4200 UC", playerIdd: 3316249092, card_type: "Visa Golden", price_usd: 200.99, uc_amount: "300k", bonus_uc: 4200, total_uc: 14200, picURL: BG_UC_Image6 },
-  { id: 11, package_name: "11000 + 4500 UC", playerIdd: 1136241355, card_type: "Master", price_usd: 220.99, uc_amount: "400k", bonus_uc: 4500, total_uc: 15500, picURL: BG_UC_Image6 },
-  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "500k", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 },
-  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "30", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6 },
-  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6},
-  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6}
+  { id: 1, package_name: "60 + 30 UC", playerIdd: 1236249952, card_type: "Master", price_usd: 0.99, uc_amount: "10k", bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1, duration: "" },
+  { id: 2, package_name: "300 + 25 UC", playerIdd: 2136249842, card_type: "Visa", price_usd: 4.99, uc_amount: "15k", bonus_uc: 25, total_uc: 325, picURL: BG_UC_Image2, duration: "" },
+  { id: 3, package_name: "600 + 60 UC", playerIdd: 3216249732, card_type: "Visa Golden", price_usd: 9.99, uc_amount: "20k", bonus_uc: 60, total_uc: 660, picURL: BG_UC_Image1, duration: "" },
+  { id: 4, package_name: "1500 + 300 UC", playerIdd: 1326249622, card_type: "Visa Golden", price_usd: 24.99, uc_amount: "30k", bonus_uc: 300, total_uc: 1800, picURL: BG_UC_Image3, duration: "" },
+  { id: 5, package_name: "3000 + 850 UC", playerIdd: 2316249512, card_type: "Visa", price_usd: 49.99, uc_amount: "40k", bonus_uc: 850, total_uc: 3850, picURL: BG_UC_Image4, duration: "" },
+  { id: 6, package_name: "6000 + 2100 UC", playerIdd: 1336249402, card_type: "Master", price_usd: 99.99, uc_amount: "60k", bonus_uc: 2100, total_uc: 8100, picURL: BG_UC_Image5, duration: "" },
+  { id: 7, package_name: "7000 + 2500 UC", playerIdd: 1216249362, card_type: "Visa Golden", price_usd: 130.99, uc_amount: "100k", bonus_uc: 2500, total_uc: 9500, picURL: BG_UC_Image6, duration: "" },
+  { id: 8, package_name: "8000 + 3100 UC", playerIdd: 2126249272, card_type: "Master", price_usd: 150.99, uc_amount: "160k", bonus_uc: 3100, total_uc: 11100, picURL: BG_UC_Image6, duration: "" },
+  { id: 9, package_name: "9000 + 3600 UC", playerIdd: 3136249182, card_type: "Visa", price_usd: 175.99, uc_amount: "200k", bonus_uc: 3600, total_uc: 12600, picURL: BG_UC_Image6, duration: "" },
+  { id: 10, package_name: "10000 + 4200 UC", playerIdd: 3316249092, card_type: "Visa Golden", price_usd: 200.99, uc_amount: "300k", bonus_uc: 4200, total_uc: 14200, picURL: BG_UC_Image6, duration: "" },
+  { id: 11, package_name: "11000 + 4500 UC", playerIdd: 1136241355, card_type: "Master", price_usd: 220.99, uc_amount: "400k", bonus_uc: 4500, total_uc: 15500, picURL: BG_UC_Image6, duration: "" },
+  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "500k", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6, duration: "" },
+  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "30", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6, duration: "" },
+  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6, duration: "8"},
+  { id: 12, package_name: "12000 + 4800 UC", playerIdd: 2116249142, card_type: "Visa", price_usd: 250.99, uc_amount: "Unlimited", bonus_uc: 4800, total_uc: 16800, picURL: BG_UC_Image6, duration: "3"}
 ];
 
 
@@ -198,7 +198,7 @@ function SuccessfulUC() {
           </button>
         </div>
 
-        <div className="card-parent h-auto w-[100%] flex items-center flex-wrap justify-start gap-5 p-4">
+        <div className="card-parent h-auto w-[100%] flex items-center flex-wrap justify-center gap-5 ">
 
           {filteredPackages.map(pkg => (
             <div onClick={() => handlePackageClick(pkg)} key={pkg.id} className='card bg-[#1B234D] shadow-lg rounded-lg overflow-hidden w-[23%] cursor-pointer'>
@@ -327,7 +327,8 @@ function SuccessfulUC() {
                       <h1 className="text-xl font-semibold text-white mb-4">Purchase Item:</h1>
                       <div className="item-info flex items-center mb-4">
                         <img src={UCImage1} alt="" className="w-16 h-16 mr-4" />
-                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + " For 8:00 hours" : selectedPackage.uc_amount + " UC"}</h2>
+                        <h2 className="uc-amount text-lg text-white">{selectedPackage.uc_amount == "Unlimited" ? selectedPackage.uc_amount + " Timing UC" + `${selectedPackage.duration == "8" ? " For 8:00 hours" : " For 3 days"}` : selectedPackage.uc_amount + " UC"}</h2>
+
                       </div>
                       <div className="item-info mb-4">
                         <h2 className="price-details text-lg font-semibold text-white mb-2">Price Details:</h2>
