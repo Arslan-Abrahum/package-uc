@@ -1,0 +1,67 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const Login = () => {
+
+    const [username, setUsername] = useState("gujjar1216")
+    const [password, setPassword] = useState("gujjar12161216")
+    const [formData, setFormData] = useState({ username: "", password: "" }) 
+    const onChange = (e)=> {
+        const {name, value} = e.target
+        setFormData({...formData, [name]: value})
+    }
+   
+    const navigate = useNavigate();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (username === formData.username && password === formData.password) {
+            navigate('/homec')
+        }
+        else {
+            alert("Enter valid username and password")
+            navigate("/")
+        }
+    }
+
+    return (
+        <div className="flex bg-image items-center justify-center min-h-screen bg-[rgb(20,27,61)]">
+            <div className="bg-[#171F45] bg-opacity-50  p-8 rounded shadow-md w-full max-w-sm">
+                <h2 className="text-4xl text-white text-shadow-custom font-bold mb-6 text-center">Login</h2>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                    <div>
+                        <label className="block text-sm text-shadow-custom text-white font-medium " htmlFor="username">Username</label>
+                        <input 
+                            type="text" 
+                            name="username" 
+                            value={formData.username} 
+                            onChange={onChange} 
+                            placeholder="Username" 
+                            required 
+                            className="mt-1 block w-full px-3 py-2 border-none rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm text-shadow-custom text-white font-medium" htmlFor="password">Password</label>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            value={formData.password} 
+                            onChange={onChange} 
+                            placeholder="Password" 
+                            required 
+                            className="mt-1 block w-full px-3 py-2 border-none rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                        />
+                    </div>
+                    <button 
+                        type="submit" 
+                        className="w-full flex justify-center py-2 px-4 border-none outline-none rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-red-500"
+                    >
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    );
+};
+
+export default Login;

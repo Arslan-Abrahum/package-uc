@@ -3,6 +3,7 @@ import Home from './components/Home'
 import SuccessfulUC from './components/SuccessfulUC'
 import FailedUC from './components/FailUC'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Login from './components/Login'
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-
-          <Route path='/' element={<Home />} />
-          <Route path='/successfuluc' element={<SuccessfulUC />} />
-          <Route path='/faileduc' element={<FailedUC />} />
+          <Route path='/' element={<Login/>}/>
+          <Route path='/homec' element={<Home />} />
+          <Route path='/homec/successfulucc' element={<SuccessfulUC />} />
+          <Route path='/homec/faileducc' element={<FailedUC />} />
 
         </Routes>
 

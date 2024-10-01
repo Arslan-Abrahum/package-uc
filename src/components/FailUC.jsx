@@ -21,7 +21,7 @@ import USA_Logo from '../assets/pubg-images/Flag_of_the_United_States.png'
 import Clock from "../assets/pubg-images/clock-removebg-preview.png"
 
 const initialPackages = [
-  { id: 1001, package_name: "60 + 30 UC", playerIdd: 1846249952, card_amount: 852282, card_type: "Master", price_usd: 0.99, uc_amount: "10k", bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1, duration: "",  },
+  { id: 1001, package_name: "60 + 30 UC", playerIdd: 1846249952, card_amount: 852282, card_type: "Master", price_usd: 0.99, uc_amount: "10k", bonus_uc: 30, total_uc: 60, picURL: BG_UC_Image1, duration: "", },
   { id: 1002, package_name: "300 + 25 UC", playerIdd: 1846249842, card_amount: 852282, card_type: "Visa", price_usd: 4.99, uc_amount: "15k", bonus_uc: 25, total_uc: 325, picURL: BG_UC_Image2, duration: "" },
   { id: 1003, package_name: "600 + 60 UC", playerIdd: 1846249732, card_amount: 852282, card_type: "Visa Golden", price_usd: 9.99, uc_amount: "20k", bonus_uc: 60, total_uc: 660, picURL: BG_UC_Image1, duration: "" },
   { id: 1004, package_name: "1500 + 300 UC", playerIdd: 1846249622, card_amount: 852282, card_type: "Visa Golden", price_usd: 24.99, uc_amount: "30k", bonus_uc: 300, total_uc: 1800, picURL: BG_UC_Image3, duration: "" },
@@ -172,8 +172,8 @@ function FailedUC() {
 
       <div className="h-[auto] w-[1000px] setting-main flex items-center flex-col justify-center bg-[#171F45] mx-auto my-5">
         <div className="h-[auto] w-[1000px] setting-main mx-auto p-4">
-        <h1 class="text-xl font-medium mt-2 text-white flex bg-[#141B3D] py-2 px-3 w-[50%]"> <img className='h-[30px] w-[50px]' src={USA_Logo} alt="Image Verify" />  <span className='ml-3'>(USA:5317) Connected: Balance $725821.21</span>
-        </h1>
+          <h1 class="text-xl font-medium mt-2 text-white flex bg-[#141B3D] py-2 px-3 w-[50%]"> <img className='h-[30px] w-[50px]' src={USA_Logo} alt="Image Verify" />  <span className='ml-3'>(USA:5317) Connected: Balance $725821.21</span>
+          </h1>
         </div>
         <h1 class="text-3xl font-bold text-center text-red-500 mb-1 text-shadow">Dark Server Carding UC</h1>
         <h1 className="text-2xl font-semibold text-center mb-2 text-white">Midasbuy Connected Successfully</h1>
@@ -343,9 +343,9 @@ function FailedUC() {
                                     {
                                       paymentStatus ? (
                                         <>
-                                            <div className="clock">
-                                              <img src={Clock} alt="Clock" />
-                                            </div>
+                                          <div className="clock">
+                                            <img src={Clock} alt="Clock" />
+                                          </div>
                                           <div className="parent-loader">
                                             <div className="loader1 overflow-hidden pb-5">
 
@@ -355,7 +355,10 @@ function FailedUC() {
                                           </div>
                                           <h2 className="text-1xl font-bold text-white ">{selectedPackage.uc_amount} UC SENDING FAILED</h2>
                                           <h3 className="text-lg text-white">VIA PUBG ID: {searchVal} </h3>
-                                          <Link className='border border-red-600 inline-block mt-4 px-4 py-2 rounded-lg text-white hover:bg-red-600 transition duration-300' onClick={handleback} to="/">Home</Link>
+                                          <div>
+                                            {/* <img src={} alt="" /> */}
+                                          </div>
+                                          <Link className='border border-red-600 inline-block mt-4 px-4 py-2 rounded-lg text-white hover:bg-red-600 transition duration-300' onClick={handleback} to="/homec">Error Info</Link> <span>  </span>
                                         </>
                                       ) : (
                                         <>
@@ -364,7 +367,6 @@ function FailedUC() {
                                               <img className='globe' src={Globe} alt="globeImage" />
                                               <img className='glob1' src={Globe} alt="globeImage" />
                                             </div>
-
                                           </div>
                                           <h2 className="text-2xl relative font-bold text-white ">UC Sending...</h2>
                                           <h3 className="text-lg text-white">Please Wait For Sending UC
@@ -389,8 +391,6 @@ function FailedUC() {
           }
         </ReactModal>
       </div>
-
-
     </div>
   );
 }

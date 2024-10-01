@@ -363,7 +363,7 @@ function SuccessfulUC() {
                                           </div>
                                           <h2 className="text-2xl font-bold text-white ">{selectedPackage.uc_amount} UC</h2>
                                           <h3 className="text-lg text-white">SENDING SUCCESSFULLY <br /> VIA PUBG ID: {searchVal} </h3>
-                                          <Link className='border border-red-600 inline-block mt-4 px-4 py-2 rounded-lg text-white hover:bg-red-600 transition duration-300' onClick={handleback} to="/">Home</Link>
+                                          <Link className='border border-red-600 inline-block mt-4 px-4 py-2 rounded-lg text-white hover:bg-red-600 transition duration-300' onClick={handleback} to="/homec">Home</Link>
                                         </>
                                       ) : (
                                         <>
