@@ -90,7 +90,6 @@ function SuccessfulUC() {
       try {
         const response = await axios.get('https://api.exchangerate-api.com/v4/latest/USD');
         const exchangeRate = await response.data.rates.PKR;
-        console.log(exchangeRate, "exchange");
         updatePackagesWithPKR(exchangeRate);
       } catch (error) {
         console.error('Error fetching exchange rate:', error);
@@ -265,7 +264,6 @@ function SuccessfulUC() {
                     <div className="card-info w-full">
                       <div className="flex justify-between items-center mb-4">
                         <h2 className="current-price text-white text-xl font-semibold">Player ID:</h2>
-                        {/* <h2 className="price-value text-white">{selectedPackage.playerIdd}</h2> */}
                         <h2 className="price-value text-white">{searchVal}</h2>
                       </div>
                       <h2 className="text-lg text-white mb-5">Select Carding Payment Channels</h2>

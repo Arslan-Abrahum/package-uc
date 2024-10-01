@@ -86,7 +86,6 @@ function FailedUC() {
       try {
         const response = await axios.get('https://api.exchangerate-api.com/v4/latest/USD');
         const exchangeRate = await response.data.rates.PKR;
-        console.log(exchangeRate, "exchange");
         updatePackagesWithPKR(exchangeRate);
       } catch (error) {
         console.error('Error fetching exchange rate:', error);
@@ -356,7 +355,6 @@ function FailedUC() {
                                           <h2 className="text-1xl font-bold text-white ">{selectedPackage.uc_amount} UC SENDING FAILED</h2>
                                           <h3 className="text-lg text-white">VIA PUBG ID: {searchVal} </h3>
                                           <div>
-                                            {/* <img src={} alt="" /> */}
                                           </div>
                                           <Link className='border border-red-600 inline-block mt-4 px-4 py-2 rounded-lg text-white hover:bg-red-600 transition duration-300' onClick={handleback} to="/homec">Error Info</Link> <span>  </span>
                                         </>
