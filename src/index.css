@@ -9,13 +9,13 @@
 }
 
 .main {
-  background: radial-gradient(rgb(48, 61, 130), #060a1f);
+  background: radial-gradient( #ffD800, #FFF700);
 }
 
 .BGImage {
-  background-image: url(./assets/pubg-images/point-card-bg.49d9002775af325b9035.png);
+  /* background-image: url(./assets/pubg-images/point-card-bg.49d9002775af325b9035.png);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 .App {
@@ -58,7 +58,7 @@
 }
 
 .text-highlight {
-  color: #FFD700;
+  color: black;
 }
 
 .BGImage img {
@@ -73,7 +73,7 @@
 }
 
 .BGImage:hover img:nth-child(2) {
-  transform: scale(1.1);
+  transform: scale(1.6);
 }
 
 /* Custom styles for the modal */
@@ -85,7 +85,7 @@
   bottom: auto;
   transform: translate(-50%, -50%);
   width: 60%;
-  background-color: #1B234D;
+  background-color: #FFF700;
   padding: 20px;
   border-radius: 8px;
   outline: none;
@@ -98,7 +98,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #060a1f;
+  background-color: #ffD800;
 }
 
 .payment-logo {
@@ -153,25 +153,26 @@
   left: -20%;
   width: 140%;
   height: 140%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
+  color: black;
+  background: radial-gradient(circle, #ffd90053 0%, #fff70000 80%);
+  /* background: radial-gradient( #ffd900af 0%, #FFF700 80%); */
   opacity: 1;
   border-radius: 50%;
   transition: opacity 0.3s ease;
 }
 
 .text-shadow {
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7),
-    6px 6px 10px rgba(0, 0, 0, 0.5),
-    9px 9px 15px rgba(0, 0, 0, 0.3);
+  text-shadow:2px 2px 5px rgba(255, 140, 0, 0.6),  /* Soft orange glow */
+  4px 4px 10px rgba(255, 140, 0, 0.4);
 }
 
 
 
 .loader-container {
   height: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .connecting-text {
@@ -185,6 +186,9 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.clock-image {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(281deg) brightness(100%) contrast(107%);
+}
 
 
 
@@ -193,12 +197,12 @@
 }
 
 .box-loader {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   position: fixed;
   top: 0vh;
   left: 0;
-  background-color: #0f1328;
+  background-color: #FFF700;
 }
 
 .parent-loader {
@@ -225,7 +229,9 @@
   width: 100%;
   filter: invert(98%) sepia(1%) saturate(308%) hue-rotate(317deg) brightness(119%) contrast(100%);
 }
-
+.visa-image {
+  filter: invert(0%) sepia(0%) saturate(7485%) hue-rotate(7deg) brightness(97%) contrast(103%);
+}
 .loader {
   height: auto;
   width: 100%;

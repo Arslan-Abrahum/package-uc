@@ -1,0 +1,25 @@
+/* Custom Scrollbar for Cards */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fff700; /* Yellow track */
+  border-radius: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ffb300; /* Golden yellow thumb */
+  border-radius: 20px;
+  border: 2px solid #fff700; /* Matching border */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9100; /* Darker gold on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ffb300 #fff700;
+}

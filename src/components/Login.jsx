@@ -3,15 +3,16 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-    const [username, setUsername] = useState("12345671")
-    const [password, setPassword] = useState("12345671")
+    const [username, setUsername] = useState("arslan@gmail.com")
+    const [password, setPassword] = useState("arslan@gmail.com")
     const [formData, setFormData] = useState({ username: "", password: "" }) 
+    const navigate = useNavigate();
+    
     const onChange = (e)=> {
         const {name, value} = e.target
         setFormData({...formData, [name]: value})
     }
-   
-    const navigate = useNavigate();
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username === formData.username && password === formData.password) {
